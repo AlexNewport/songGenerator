@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Song Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript" src="./lib/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./js/songGenerator.js">
+      
+     
+    </script>
+  </head>
+
+  <body>
+    <h1>Song Generator using jQuery</h1>
+    <div id="wrapper">
+      <div id="song"></div>
+      <div id="dashboard">
+        <div class="writersblock">
+          <button onclick="createVerse()">Create</button
+          ><label for="verseNum"> Verse Number </label>
+          <input
+            type="text"
+            id="id_verseNumToCreate"
+            name="name_verseNumberToCreate"
+            value="1"
+            maxlength="1"
+            size="1"
+          />
+          <br>
+          <label for="freeform">Enter the text for your verse:</label> or
+          <button id="id_randomMelancholy" onclick="randomMelancholyVerse()">use melancholy</button>
+          <button id="id_randomUpbeat" onclick="randomUpbeatVerse()">use upbeat</button>
+          <br>
+          <textarea
+            id="id_freeform"
+            name="name_freeform"
+            rows="4"
+            cols="50"
+          >
+Enter text here...
+</textarea
+            >
+          </div>
+
+          <div class="writersblock">
+            <button id="changeAll" onclick="addDots(true)">Add ... Before</button><input
+            type="text"
+            id="id_dotsBefore"
+            name="name_dotsBefore"
+            value="1"
+            maxlength="1"
+            size="1"
+          /><br>
+              <button id="changeAll" onclick="addDots(false)">Add ... After</button><input
+            type="text"
+            id="id_dotsAfter"
+            name="name_dotsAfter"
+            value="1"
+            maxlength="1"
+            size="1"
+          />
+          <button id="changeAll" onclick="addExclamation(false)">Add ! After</button><input
+            type="text"
+            id="id_exclamationAfter"
+            name="name_exclamationAfter"
+            value="1"
+            maxlength="1"
+            size="1"
+          />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
